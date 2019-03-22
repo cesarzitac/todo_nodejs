@@ -1,0 +1,14 @@
+extends ../layouts/main 
+block content
+    div(class="row")
+        each tarea in tareas
+            div(class="col-md-3")
+                div(class="card text-center")
+                    div(class="card-body")
+                        h4(class="card-title text-uppercase") #{tarea.id} #{tarea.descripcion}
+                        h5(class="needs_to_be_rendered" datetime=`${tarea.fecha_creacion.getTime()}`)
+                        h6(class="") #{tarea.fecha_creacion}
+                        a(href=`/task/delete/${tarea.id}` class="btn btn-danger") Eliminar tarea
+                        a(href=`/task/update/${tarea.id}` class="btn btn-secondary") Editar tarea
+
+

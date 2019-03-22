@@ -1,0 +1,18 @@
+extends ../layouts/main
+block content
+
+    div(class="container p-4")
+        div(class="row")
+            div(class="col-md-4 mx-auto")
+                div(class="card")
+                    div(class="card-body")
+                        form(action="/task/add" method='POST')
+                            div(class="form-group")
+                                input(type="number" name="id" value=task.id class="form-control" readonly)
+                            div(class="form-group")
+                                input(type="text" name="descripcion" value=task.descripcion class="form-control" placeholder="tarea a registrar")
+                            div(class="form-group")
+                                h6 fecha de tarea
+                                input(type="date" name="fecha_ejecucion" class="form-control" value=task.fecha_ejecucion id="datetimepicker" placeholder="Fecha de tarea")
+                            div(class="form-group")
+                                button(class="btn btn-success btn-block") #{!task.id? 'Agendar tarea' : 'Actualizar'}

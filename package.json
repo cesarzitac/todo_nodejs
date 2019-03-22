@@ -1,0 +1,39 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "bootstrap-datetime-picker": "^2.4.4",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.4",
+    "express-mysql-session": "^2.1.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "luxon": "^1.11.4",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "popper.js": "^1.14.7",
+    "pug": "^2.0.3",
+    "timeago.js": "^4.0.0-beta.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "start": "node servidor",
+    "dev": "nodemon src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
